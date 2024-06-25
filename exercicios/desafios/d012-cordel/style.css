@@ -61,7 +61,9 @@ main .estrofes{
 main section.imagem{
     background-position: right center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.464);
 }
 
 main section#img01{
@@ -73,11 +75,11 @@ main section#img02{
 }
 
 main section.imagem p{
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.513);
     color: white;
     display: inline-block;
     padding: 5px;
-    
+    text-shadow: 1px 1px 0px black;
 }
 
 footer{
