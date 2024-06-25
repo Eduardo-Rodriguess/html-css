@@ -1,10 +1,24 @@
 @charset "UTF-8";
 
-body{
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
     margin: 0;
     padding: 0;
+    font-size: 1em;
+}
+html, body{
+    background-color: white;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -16,9 +30,11 @@ header{
 header h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
-header p{
+header > p{
     padding-bottom: 50px;
 }
 
@@ -34,10 +50,12 @@ header a:hover{
 
 main .estrofes{
     line-height: 2em;
-    font-weight: bold;
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+
 }
 
 main section.imagem{
@@ -57,8 +75,9 @@ main section#img02{
 main section.imagem p{
     background-color: rgba(0, 0, 0, 0.253);
     color: white;
-    width: 300px;
+    display: inline-block;
     padding: 5px;
+    
 }
 
 footer{
@@ -66,6 +85,7 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: 3.5vw;
 }
 
 footer a{
