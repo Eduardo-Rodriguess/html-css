@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </div>
+        <div>
+            <label for="media">Média</label>
+            <input type="number" name="media" id="media" placeholder="0 a 10" min="0" max="10" step="0.1" value="5">
+        </div>
+        <div>
+            <label for="periodoLetivo">Período Letivo:</label>
+            <input type="month" name="periodoLetivo" id="periodoLetivo" value="2024-06">
+        </div>
+        <div>
+            <label for="data">Dia da Prova:</label>
+            <input type="date" name="data" id="data" value="2024-06-28">
+        </div>
+        <div>
+            <label for="horario">Horário da Prova</label>
+            <input type="time" name="horario" id="horario" value="16:15">
+        </div>
+        <div>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </div>
+    </form>
+</body>
+</html>
