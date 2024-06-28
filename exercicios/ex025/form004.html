@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            font-size: 1.8em;
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        div{
+            margin: 20px;
+        }
+        fieldset{
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+            width: 50vw;
+            border-radius: 10px;
+        }
+
+        legend{
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend> 
+
+        <form action="cadastro.phpd" method="get" autocomplete="on">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autocomplete="name" placeholder="nome">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emai" required placeholder="email" autocomplete="email">
+            </div>
+            <div>
+                <label for="telefone">Telefone: </label>
+                <input type="number" name="telefone" id="telefone" autocomplete="tel" required placeholder="(xx) xxxx-xxxx">
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR">
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>

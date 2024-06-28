@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: monospace;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            font-size: 1.8em;
+        }
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        div{
+            margin: 20px;
+        }
+        fieldset{
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        legend{
+            padding: 0 10px;
+        }
+
+        div#div2 input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get"></form>
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <div>
+                <input type="radio" name="sexo" id="mas" checked value="mas">
+                <label for="mas">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="fem" checked value="fem">
+                <label for="fem">Feminino</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+                    <div id="div1">
+                        <input type="checkbox" name="basquete" id="basquete" class="basquete">
+                        <label for="basquete" class="basquete">Basquete</label> 
+                        <br>
+                        <input type="checkbox" name="futebol" id="futebol" class="futebol">
+                        <label for="futebol" class="futebol">Futebol</label> 
+                        <br>
+                        <input type="checkbox" name="natacao" id="natacao" class="natacao">
+                        <label for="natacao" class="natacao">Natação</label> 
+                        <br>
+                        <input type="checkbox" name="tenis" id="tenis" class="tenis">
+                        <label for="tenis" class="tenis">Tênis</label>
+                    </div>
+        </fieldset>
+        <div id="div2">
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </div>
+    </form>
+</body>
+</html>
