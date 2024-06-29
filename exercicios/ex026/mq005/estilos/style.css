@@ -54,6 +54,7 @@ span#burguer:hover{
 
 menu > ul > li > a:hover{
     background-color: gray;
+    transition: .5s;
 }
 
 main{
