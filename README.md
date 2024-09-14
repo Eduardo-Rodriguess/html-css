@@ -1,5 +1,4 @@
-# html-css
- Curso de HTML5 e CSS3 do CursoemVideo
+# <h1>html-css</h1>
+<p>Curso de HTML5 e CSS3 do CursoemVideo</p>
 
-Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
-<br><a href="https://eduardo-rodriguess.github.io/html-css/exercicios/ex026/mq002/index.html">Exercício 026 Media Query</a>
+
